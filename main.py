@@ -7,17 +7,15 @@ import joblib
 import os
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 
-# Инициализация FastAPI
 app = FastAPI()
 
-# Загрузка модели из pickle-файла
 if not os.path.exists('best_model.pkl'):
     raise FileNotFoundError("Файл модели 'model.pkl' не найден. Убедитесь, что он находится в текущем каталоге.")
 model = joblib.load('best_model.pkl')
 
 medians = {'mileage': 19.3, 'engine': 1248.0, 'max_power': 82.0, 'seats': 5.0}
 
-# Модели данных
+
 class Item(BaseModel):
     name: str
     year: int
@@ -32,7 +30,6 @@ class Item(BaseModel):
     max_power: str
     torque: str
     seats: float
-
 
 class Items(BaseModel):
     objects: List[Item]
