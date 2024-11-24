@@ -24,6 +24,16 @@
 
 ### С какими результатами
 Наилучший результат по оффлайн-метрике и бизнес-метрике дала модель на гребневой регрессии, она была выбрана для реализации сервиса на FastAPI.
+Нна скриншотах представлена работа сервиса:
+1) Главная страница при переходе на https://fastapi.loca.lt/docs
+![main_screenshot](https://github.com/akiltrebreg/ai_ml_hw1/blob/main/screenshots/main.png?raw=true)
+2) Работа метода post, который получает на вход один объект описанного класса (json)
+![predict_item_1_screenshot](https://github.com/akiltrebreg/ai_ml_hw1/blob/main/screenshots/predict_item_1.png?raw=true)
+![predict_item_2_screenshot](https://github.com/akiltrebreg/ai_ml_hw1/blob/main/screenshots/predict_item_2.png?raw=true)
+3) Работа метода post, который получает на вход коллекцию объектов описанного класса (csv-файл)
+![predict_items_1_screenshot](https://github.com/akiltrebreg/ai_ml_hw1/blob/main/screenshots/predict_items_1.png?raw=true)
+![predict_items_2_screenshot](https://github.com/akiltrebreg/ai_ml_hw1/blob/main/screenshots/predict_items_2.png?raw=true)
+ 
 
 ### Что дало наибольший буст в качестве
 Наибольший буст дало добавление к вещественным признакам закодированных OHE категориальных признаков.
